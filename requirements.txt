@@ -1,0 +1,12 @@
+# tg-floodgate core is stdlib-only (Python 3.10+). Extras below are optional.
+
+# Redis backend (distributed multi-instance deployments):
+# redis>=5.0
+
+# aiogram v3 adapter (pace Bot.send_* calls automatically):
+# aiogram>=3.0
+
+# test suite:
+# pytest
+# pytest-asyncio
+# fakeredis
