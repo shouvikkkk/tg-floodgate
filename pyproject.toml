@@ -1,0 +1,19 @@
+[project]
+name = "tg-floodgate"
+version = "0.1.0"
+description = "Distributed, scope-aware outbound send governor for Telegram bots"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+redis = ["redis>=5.0"]
+aiogram = ["aiogram>=3.0"]
+test = ["pytest", "pytest-asyncio", "fakeredis"]
+
+[project.scripts]
+floodgate = "tg_floodgate.cli:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
